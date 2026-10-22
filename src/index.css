@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rise-50: #FFF5F7;
+  --color-rise-100: #FFE5EC;
+  --color-rise-200: #FFC2D1;
+  --color-rise-300: #FFB3C6;
+  --color-rise-400: #FF8FAB;
+  --color-rise-500: #FB6F92;
+  --color-rise-600: #E04D74;
+  --color-rise-700: #C23259;
+  --color-rise-800: #9F1C42;
+  --color-rise-900: #7A1432;
+
+  --font-sans: 'Prompt', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFF9FA;
+    color: #1E293B;
+  }
+}
+
+/* Custom scrollbar for mock questions and modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFE5EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFB3C6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8FAB;
+}
+
+/* Print styling for printable PDF Exam Sheet & OMR Bubble Sheet */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break-after {
+    page-break-after: always;
+  }
+}

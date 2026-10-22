@@ -1,0 +1,6 @@
+{
+  "name": "RISE - Exam Prep & Mock Test Platform",
+  "description": "แพลตฟอร์มคลังข้อสอบ TGAT, TPAT, A-LEVEL, IELTS, SAT & Mock Test พร้อม AI วิเคราะห์จุดอ่อน วางแผนอ่านหนังสือ และสะสมแต้มแลกรางวัล",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
